@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests" thread-count="7">
+
+    <test verbose="2" preserve-order="true" name="ParallelTesting1">
+        <classes>
+            <class name="tests.C08_MethodChain"> </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="ParallelTesting2">
+        <classes>
+            <class name="tests.C01_GetDriver"> </class>
+            <class name="tests.C04_FindBysFindAll"> </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="ParallelTesting3">
+        <classes>
+            <class name="tests.C02_Properties"> </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="ParallelTesting4">
+        <classes>
+            <class name="tests.C07_ActionsMethods"> </class>
+            <class name="tests.C03_PageFactory"> </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="ParallelTesting5">
+        <classes>
+            <class name="tests.C05_SauceDemo"> </class>
+        </classes>
+    </test>
+
+</suite>
+

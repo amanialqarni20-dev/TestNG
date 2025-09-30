@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="٢٠٢٥-٠٩-٢٩T١٥:٥٨:٤٧ AST" name="Default Suite" finished-at="٢٠٢٥-٠٩-٢٩T١٥:٥٩:٤٣ AST" duration-ms="56159">
+    <groups>
+    </groups>
+    <test started-at="٢٠٢٥-٠٩-٢٩T١٥:٥٨:٤٧ AST" name="TestNGPOM" finished-at="٢٠٢٥-٠٩-٢٩T١٥:٥٩:٤٣ AST" duration-ms="56159">
+      <class name="Task.AmazonSearchParallelTest">
+        <test-method signature="amazonSearchTest(java.lang.String)[pri:0, instance:Task.AmazonSearchParallelTest@7f3b84b8]" started-at="٢٠٢٥-٠٩-٢٩T١٥:٥٨:٤٧ AST" name="amazonSearchTest" data-provider="searchData" finished-at="٢٠٢٥-٠٩-٢٩T١٥:٥٩:١٣ AST" duration-ms="25699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[George Orwell]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonSearchTest -->
+        <test-method signature="amazonSearchTest(java.lang.String)[pri:0, instance:Task.AmazonSearchParallelTest@7f3b84b8]" started-at="٢٠٢٥-٠٩-٢٩T١٥:٥٨:٤٧ AST" name="amazonSearchTest" data-provider="searchData" finished-at="٢٠٢٥-٠٩-٢٩T١٥:٥٩:٤١ AST" duration-ms="53820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Elif Shafak]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonSearchTest -->
+        <test-method signature="amazonSearchTest(java.lang.String)[pri:0, instance:Task.AmazonSearchParallelTest@7f3b84b8]" started-at="٢٠٢٥-٠٩-٢٩T١٥:٥٨:٤٧ AST" name="amazonSearchTest" data-provider="searchData" finished-at="٢٠٢٥-٠٩-٢٩T١٥:٥٩:٤٣ AST" duration-ms="56020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dostoevsky]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonSearchTest -->
+        <test-method signature="amazonSearchTest(java.lang.String)[pri:0, instance:Task.AmazonSearchParallelTest@7f3b84b8]" started-at="٢٠٢٥-٠٩-٢٩T١٥:٥٨:٤٧ AST" name="amazonSearchTest" data-provider="searchData" finished-at="٢٠٢٥-٠٩-٢٩T١٥:٥٩:٤١ AST" duration-ms="53974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kafka]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonSearchTest -->
+        <test-method signature="amazonSearchTest(java.lang.String)[pri:0, instance:Task.AmazonSearchParallelTest@7f3b84b8]" started-at="٢٠٢٥-٠٩-٢٩T١٥:٥٨:٤٧ AST" name="amazonSearchTest" data-provider="searchData" finished-at="٢٠٢٥-٠٩-٢٩T١٥:٥٩:٣٨ AST" duration-ms="51466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Milan Kundera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonSearchTest -->
+      </class> <!-- Task.AmazonSearchParallelTest -->
+    </test> <!-- TestNGPOM -->
+  </suite> <!-- Default Suite -->
+</testng-results>
