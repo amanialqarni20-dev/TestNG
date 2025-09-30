@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class PositiveLoginTest {
 
-    @Test(timeOut = 30000) // timeout = 30 ثانية
+    @Test(timeOut = 30000)
     public void validLoginTest() {
         WebDriver driver = Driver.getDriver();
         driver.get("https://practicetestautomation.com/practice-test-login/");
@@ -19,7 +19,7 @@ public class PositiveLoginTest {
 
         String url = driver.getCurrentUrl();
         Assert.assertTrue(url.contains("logged-in-successfully"),
-                "✅ Positive login should navigate to success page");
+                " Positive login should navigate to success page");
 
         System.out.println("Positive Login ran on Thread: " + Thread.currentThread().getId());
         Driver.closeDriver();

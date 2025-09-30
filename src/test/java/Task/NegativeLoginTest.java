@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class NegativeLoginTest {
 
-    @Test(timeOut = 30000) // timeout = 30 ثانية
+    @Test(timeOut = 30000)
     public void invalidLoginTest() {
         WebDriver driver = Driver.getDriver();
         driver.get("https://practicetestautomation.com/practice-test-login/");
@@ -19,7 +19,7 @@ public class NegativeLoginTest {
 
         String error = driver.findElement(By.id("error")).getText();
         Assert.assertTrue(error.contains("Your username is invalid!"),
-                "❌ Negative login should show error message");
+                " Negative login should show error message");
 
         System.out.println("Negative Login ran on Thread: " + Thread.currentThread().getId());
         Driver.closeDriver();

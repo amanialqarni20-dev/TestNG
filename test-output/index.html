@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Default Suite</span>
+              <span class="suite-name border-failed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,41 +92,84 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">10 methods, 3 failed,  7 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
-                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_Suite">
+                    <div class="method-list-content failed suite-Default_Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="Task.AmazonSearchParallelTest" class="method navigator-link" hash-for-method="amazonSearchTest(George Orwell)">amazonSearchTest(George Orwell)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test01">test01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="Task.AmazonSearchParallelTest" class="method navigator-link" hash-for-method="amazonSearchTest(Elif Shafak)">amazonSearchTest(Elif Shafak)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test02">test02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="Task.AmazonSearchParallelTest" class="method navigator-link" hash-for-method="amazonSearchTest(Dostoevsky)">amazonSearchTest(Dostoevsky)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test03">test03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods skipped suite-Default_Suite"> (hide)</a> <!-- hide-methods skipped suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods skipped suite-Default_Suite"> (show)</a> <!-- show-methods skipped suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test04">test04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods skipped suite-Default_Suite"> (hide)</a> <!-- hide-methods skipped suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods skipped suite-Default_Suite"> (show)</a> <!-- show-methods skipped suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test01">test01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="Task.AmazonSearchParallelTest" class="method navigator-link" hash-for-method="amazonSearchTest(Kafka)">amazonSearchTest(Kafka)</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test01">test01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="Task.AmazonSearchParallelTest" class="method navigator-link" hash-for-method="amazonSearchTest(Milan Kundera)">amazonSearchTest(Milan Kundera)</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test02">test02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_Suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test02">test02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test03">test03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="tests.C16_ExtentReportsWithListeners" class="method navigator-link" hash-for-method="test03">test03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -138,54 +181,162 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
-          <div class="suite-Default_Suite-class-passed">
+          <div class="suite-Default_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Task.AmazonSearchParallelTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.C16_ExtentReportsWithListeners</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="amazonSearchTest(George Orwell)">
-                  </a> <!-- amazonSearchTest(George Orwell) -->
-                  <span class="method-name">amazonSearchTest</span>
-                  <span class="parameters">(George Orwell)</span>
+                  <a name="test01">
+                  </a> <!-- test01 -->
+                  <span class="method-name">test01</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test01(C16_ExtentReportsWithListeners.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="amazonSearchTest(Elif Shafak)">
-                  </a> <!-- amazonSearchTest(Elif Shafak) -->
-                  <span class="method-name">amazonSearchTest</span>
-                  <span class="parameters">(Elif Shafak)</span>
+                  <a name="test02">
+                  </a> <!-- test02 -->
+                  <span class="method-name">test02</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test02(C16_ExtentReportsWithListeners.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="amazonSearchTest(Dostoevsky)">
-                  </a> <!-- amazonSearchTest(Dostoevsky) -->
-                  <span class="method-name">amazonSearchTest</span>
-                  <span class="parameters">(Dostoevsky)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="amazonSearchTest(Kafka)">
-                  </a> <!-- amazonSearchTest(Kafka) -->
-                  <span class="method-name">amazonSearchTest</span>
-                  <span class="parameters">(Kafka)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="amazonSearchTest(Milan Kundera)">
-                  </a> <!-- amazonSearchTest(Milan Kundera) -->
-                  <span class="method-name">amazonSearchTest</span>
-                  <span class="parameters">(Milan Kundera)</span>
+                  <a name="test03">
+                  </a> <!-- test03 -->
+                  <span class="method-name">test03</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test03(C16_ExtentReportsWithListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_Suite-class-passed -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.C16_ExtentReportsWithListeners</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test01">
+                  </a> <!-- test01 -->
+                  <span class="method-name">test01</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test01(C16_ExtentReportsWithListeners.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test01">
+                  </a> <!-- test01 -->
+                  <span class="method-name">test01</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test01(C16_ExtentReportsWithListeners.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test02">
+                  </a> <!-- test02 -->
+                  <span class="method-name">test02</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test02(C16_ExtentReportsWithListeners.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test02">
+                  </a> <!-- test02 -->
+                  <span class="method-name">test02</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test02(C16_ExtentReportsWithListeners.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test03">
+                  </a> <!-- test03 -->
+                  <span class="method-name">test03</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test03(C16_ExtentReportsWithListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test03">
+                  </a> <!-- test03 -->
+                  <span class="method-name">test03</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.SLProductsPage.sortProducts(int)&quot; because the return value of &quot;pages.SLLoginPage.assertLogin()&quot; is null
+	at tests.C16_ExtentReportsWithListeners.test03(C16_ExtentReportsWithListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test04">
+                  </a> <!-- test04 -->
+                  <span class="method-name">test04</span>
+                  <div class="stack-trace">org.testng.SkipException: This test is skipped intentionally!
+	at tests.C16_ExtentReportsWithListeners.test04(C16_ExtentReportsWithListeners.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-skipped -->
         </div> <!-- panel Default_Suite -->
         <div panel-name="test-xml-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -198,7 +349,7 @@
 &lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestNGPOM&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Task.AmazonSearchParallelTest&quot;/&gt;
+      &lt;class name=&quot;tests.C16_ExtentReportsWithListeners&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestNGPOM --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -238,32 +389,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'amazonSearchTest')
-data.setCell(0, 2, 'Task.AmazonSearchParallelTest')
-data.setCell(0, 3, 56020);
+data.setCell(0, 1, 'test01')
+data.setCell(0, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(0, 3, 17593);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'amazonSearchTest')
-data.setCell(1, 2, 'Task.AmazonSearchParallelTest')
-data.setCell(1, 3, 53974);
+data.setCell(1, 1, 'test01')
+data.setCell(1, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(1, 3, 771);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'amazonSearchTest')
-data.setCell(2, 2, 'Task.AmazonSearchParallelTest')
-data.setCell(2, 3, 53820);
+data.setCell(2, 1, 'test01')
+data.setCell(2, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(2, 3, 684);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'amazonSearchTest')
-data.setCell(3, 2, 'Task.AmazonSearchParallelTest')
-data.setCell(3, 3, 51466);
+data.setCell(3, 1, 'test02')
+data.setCell(3, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(3, 3, 490);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'amazonSearchTest')
-data.setCell(4, 2, 'Task.AmazonSearchParallelTest')
-data.setCell(4, 3, 25699);
+data.setCell(4, 1, 'test02')
+data.setCell(4, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(4, 3, 380);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test03')
+data.setCell(5, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(5, 3, 380);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test02')
+data.setCell(6, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(6, 3, 349);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test03')
+data.setCell(7, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(7, 3, 305);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test03')
+data.setCell(8, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(8, 3, 271);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test04')
+data.setCell(9, 2, 'tests.C16_ExtentReportsWithListeners')
+data.setCell(9, 3, 5);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -289,26 +460,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Task.AmazonSearchParallelTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.C16_ExtentReportsWithListeners</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">amazonSearchTest(George Orwell)</span>
+                <span class="method-name">test01</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">amazonSearchTest(Elif Shafak)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">test01</span>
+                <span class="method-start">19309 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">amazonSearchTest(Dostoevsky)</span>
-                <span class="method-start">0 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test01</span>
+                <span class="method-start">20021 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">amazonSearchTest(Kafka)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">test02</span>
+                <span class="method-start">21300 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">amazonSearchTest(Milan Kundera)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">test02</span>
+                <span class="method-start">21716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test02</span>
+                <span class="method-start">22240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test03</span>
+                <span class="method-start">22785 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test03</span>
+                <span class="method-start">23184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test03</span>
+                <span class="method-start">23517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test04</span>
+                <span class="method-start">23983 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
