@@ -6,6 +6,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.testng.ITestResult;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -50,7 +51,7 @@ public class ExtentReportManager {
     }
 
     // Log test results with screenshot on failure
-    public static void logResult(ITestResult result) {
+    public static void logResult(ITestResult result) throws IOException {
         ExtentTest test = extentTestThread.get();
         if (test == null) return;
 

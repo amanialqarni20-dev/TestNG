@@ -1,4 +1,4 @@
-package Task;
+package Task.ParallelTestingListeners;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

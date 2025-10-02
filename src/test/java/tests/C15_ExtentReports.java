@@ -11,6 +11,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReportManager;
 
+import java.io.IOException;
 import java.time.LocalTime;
 
 public class C15_ExtentReports {
@@ -22,7 +23,7 @@ public class C15_ExtentReports {
     }
 
     @AfterMethod
-    void tearDown(ITestResult result){
+    void tearDown(ITestResult result) throws IOException {
         ExtentReportManager.log(Status.INFO, "Test finished at: "+ LocalTime.now());
         ExtentReportManager.logResult(result);
         ExtentReportManager.flushReport();

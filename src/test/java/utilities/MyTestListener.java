@@ -1,9 +1,11 @@
 package utilities;
 
 import com.aventstack.extentreports.Status;
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.*;
 import org.testng.annotations.ITestAnnotation;
-
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -12,6 +14,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalTime;
+
+import static utilities.ExtentReportManager.logResult;
 
 public class MyTestListener implements ITestListener, IRetryAnalyzer, IAnnotationTransformer {
 
@@ -26,7 +30,11 @@ public class MyTestListener implements ITestListener, IRetryAnalyzer, IAnnotatio
     public void onTestSuccess(ITestResult result) {
         System.out.println(result.getName() + " is SUCCESS!");
         ExtentReportManager.log(Status.INFO, "Test finished at: " + LocalTime.now());
-        ExtentReportManager.logResult(result);
+        try {
+            logResult(result);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         ExtentReportManager.flushReport();
     }
 
@@ -34,15 +42,24 @@ public class MyTestListener implements ITestListener, IRetryAnalyzer, IAnnotatio
     public void onTestFailure(ITestResult result) {
         System.out.println(result.getName() + " is FAILED!!!");
         ExtentReportManager.log(Status.INFO, "Test finished at: " + LocalTime.now());
-        ExtentReportManager.logResult(result);
+        try {
+            logResult(result);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         ExtentReportManager.flushReport();
+        addFailedScreenshot();
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         System.out.println(result.getName() + " is SKIPPED!!!");
         ExtentReportManager.log(Status.INFO, "Test finished at: " + LocalTime.now());
-        ExtentReportManager.logResult(result);
+        try {
+            logResult(result);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         ExtentReportManager.flushReport();
     }
 
@@ -99,4 +116,10 @@ public class MyTestListener implements ITestListener, IRetryAnalyzer, IAnnotatio
     public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
         annotation.setRetryAnalyzer(MyTestListener.class);
     }
+
+    @Attachment(value = "Failed Screen", type = "image/png")
+    public static byte[] addFailedScreenshot(){
+        return ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+    }
+
 }
